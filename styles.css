@@ -1,0 +1,226 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header header" 
+    "content heros"
+    "content heros"
+    "marcas heros";
+    font-family: Epilogue, sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+body,p,h1,ul,li{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.header{
+    margin: 18px 70px;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+#logo{
+    margin-top: 5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.header li{
+    position: relative;
+    cursor: pointer;
+}
+.header  a{
+    text-decoration: none;
+    color: hsl(0, 0%, 50%);
+    padding: 10px;
+    font-size: 1em;
+    margin-left: 18px;
+}
+
+.header a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.login a:last-child{
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.login a:last-child:hover{
+    border: 3px solid hsl(0, 0%, 41%);
+}
+
+#list{
+    position: absolute;
+    background-color: #fff;
+    margin-top: 10px;
+    height: 120px;
+    width: 110px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    box-shadow: 1px 1px 5PX 5PX  rgba(140, 140, 140, 0.242);
+}
+
+#list.show{
+    display: flex;
+}
+#company{   
+    margin-left: 20px;
+}
+.list2{
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5PX 5PX  rgba(140, 140, 140, 0.242);
+}
+
+.list2.show{
+    display: flex;
+}
+#company ul{
+    margin-left: 13px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+}
+
+.list ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+}
+.list li{
+    display: flex;
+    width: 100%; 
+}
+
+.list span{
+    padding-left: 20px;align-self: flex-end;
+}
+
+.content p {
+    font-size: 18px;
+    max-width: 450px;
+    align-self: flex-start; 
+    line-height: 1.5;
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 130px 200px 0px 200px;
+}
+
+.content button{
+    align-self: flex-start;
+    margin-top: 30px;
+    height: 45px;
+    width: 140px;
+    border: 2px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 8%);
+    color: #fff;
+    font: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.content button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.4em;
+    width: 100%;
+    line-height: 0.01;
+    padding-bottom:60px ;
+    font-weight: 700;
+}
+.title h1{
+    align-self: flex-start;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title h1+h1{
+    margin-top: 60px;
+}
+
+.title h1+h1{
+    padding-top: 0;
+}
+
+.heros{
+    grid-area: heros;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+}
+.heros img{
+    width: 380px;
+    align-self: center;
+    margin-top: 50px;
+    padding-bottom: 0;
+    margin: 8px;
+}
+
+.marcas{
+    grid-area: marcas;
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+}
+
+.marcas ul{
+    display: flex;
+    list-style: none;
+}
+
+.marcas li{
+    padding-right: 30px;
+}
+
+
+
+
